@@ -4,25 +4,21 @@ using namespace std;
 
 int main()
 {
-    string s = "ABCBA";
-
+    string s = "SudhaahduS";
+    bool IsPalindrome = true;
     int l = s.length(), i;
     for (i = 0; i < l / 2; i++)
     {
         if (s[i] != s[l - i - 1])
         {
-            // cout << "not" << endl;
-            break;
+            IsPalindrome = false;
         }
     }
-    if (i == l - 1)
-    {
-        cout << "Palindrome" << endl;
-    }
+
+    if (IsPalindrome == false)
+        cout << "Not palindrome" << endl;
     else
-    {
-        cout << "not palindrome" << endl;
-    }
+        cout << "Palindrome" << endl;
 
     return 0;
 }
