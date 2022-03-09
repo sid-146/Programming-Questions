@@ -9,7 +9,8 @@ void fibonacci(int num, int sum, int first, int second)
         cout << first << " ";
         int sum = first + second;
         first = second;
-        second = sum;
+        second = first;
+        // return fibonacci(num - 1, first + second, first, second);
         return fibonacci(num - 1, sum, first, second);
     }
 }
