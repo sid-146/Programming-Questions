@@ -25,8 +25,42 @@ Testcase:
 
 using namespace std;
 
+int ArrayPalindrome(int arr[], int n)
+{
+    int i = 0, j = n - 1, mergeCount = 0;
+
+    while (i <= n / 2)
+    {
+        // cout << "Running " << i << endl;
+        if (arr[i] < arr[j])
+        {
+            if (arr[i] + arr[i + 1] == arr[j])
+                mergeCount++;
+        }
+        else if (arr[i] > arr[j])
+        {
+            if (arr[i] == arr[j] + arr[j - 1])
+            {
+                mergeCount++;
+            }
+        }
+
+        i++;
+        j--;
+    }
+
+    return mergeCount;
+}
+
 int main()
 {
+    int arr[4] = {3, 7, 1, 2};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    // cout << "Running" << endl;
+    int ans = ArrayPalindrome(arr, n);
+
+    cout << ans << endl;
 
     return 0;
 }
