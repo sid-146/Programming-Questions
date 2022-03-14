@@ -27,6 +27,7 @@
 .navbar {
   background-color: darkkhaki;
   padding: 15px;
+  text-align: justify;
 }
 
 .asidebar {
@@ -37,4 +38,15 @@
 .img {
   height: 560px;
   width: 1060px;
+}
+
+.video {
+  height: 600px;
+  width: 1000px;
+}
+
+#Video {
+  height: auto;
+  width: auto;
+  /* scroll-behavior: smooth; */
 }

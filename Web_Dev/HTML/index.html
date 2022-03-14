@@ -29,10 +29,32 @@
 
        
 
-        <header class="purple">
+        <header id="top" class="purple">
             This is header
             <nav class="navbar">
-                this is nav bar
+                <ul>
+                    <li> 
+                        <!-- ? Link to id on same page -->
+                        <a href="#youtube">
+                        youtube embed
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#video">
+                            StarField
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#top">
+                            Top
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Web_Dev/HTML/next.html">
+                            Txen
+                        </a>
+                </li>
+                </ul>
             </nav>
         </header>
 
@@ -49,18 +71,86 @@
                 </article>
                 <article>
                     This is mouse
-                    <img src="/Web_Dev/img/front_riot.png" alt="This is mouse image">
+                    <figure>
+                        <img class="" src="/Web_Dev/img/front_riot.png" alt="This is mouse image">
+                        <figcaption class="purple">
+                            This is logitech hero 502
+                        </figcaption>
+                    </figure>
                 </article>
                 <article>
+                    <video id="Video" src="/Web_Dev/video/StarField.gif" controls >
+                        <!-- Conrtols Autoplay Muted Preload height width -->
                     This is article
+                </article>
+                <article>
+                    <iframe id="video" class="video" src="/Web_Dev/video/StarField.gif" frameborder="0"></iframe>
+                </article>
+
+                <article id="youtube" class="green">
+                    youtube embed <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vGO5iY7hfJ0" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </article>
             </main>
             <aside class="asidebar">
                 this is aside
             </aside>
         </section>
+        <section>
+            <blockquote>
+                "This is quoted paragraph"
+            </blockquote>
+            <code>
+                <!-- Need to provide br tag to change line in code tag -->
+                print("Web development is easy!") <br>
+                print("This is code tag")
+            </code>
+
+            <pre>
+                #include <iostream>
+                using namespace std;
+                int main()
+                {
+                    cout<<"This is pre tagg"
+                    return 0;
+                }
+            </pre>
+        </section>
+
+        <section class="">
+            <!-- ! Tables -->
+
+            <table class="asidebar">
+                <tr>
+                    <th colspan="4">ONE</th>
+                </tr>
+                <tr>
+                    <!-- ? Study about rowspan attribute -->
+                    <td>one</td>
+                    <td>one</td>
+                    <td>one</td>
+                    <td>one</td>
+                </tr>
+                <tr>
+                    <td>one</td>
+                    <td>one</td>
+                    <td>one</td>
+                    <td>one</td>
+                </tr>
+                <tr>
+                    <td>one</td>
+                    <td>one</td>
+                    <td>one</td>
+                    <td>one</td>
+                </tr>
+            </table>
+
+        </section>
 
         <footer class="green">
+            
             this is footer
         </footer>
 
