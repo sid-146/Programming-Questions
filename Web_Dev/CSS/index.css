@@ -1,0 +1,40 @@
+.white {
+  background-color: aliceblue;
+  padding: 25px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.purple {
+  padding: 15px;
+  background-color: violet;
+}
+
+.green {
+  background-color: greenyellow;
+  text-align: left;
+  padding: 25px;
+  padding-top: 10px;
+}
+
+.orange {
+  background-color: rgb(139, 70, 252);
+  /* text-align: right; */
+  padding: 25px;
+  padding-top: 10px;
+}
+
+.navbar {
+  background-color: darkkhaki;
+  padding: 15px;
+}
+
+.asidebar {
+  background-color: steelblue;
+  padding: 15px;
+}
+
+.img {
+  height: 560px;
+  width: 1060px;
+}
