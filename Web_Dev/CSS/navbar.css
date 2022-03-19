@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  background-color: #2a2a2a;
+  background-color: rgb(24, 23, 11);
 }
 
 li,
@@ -14,20 +14,62 @@ button {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  background-color: blanchedalmond;
+  color: blanchedalmond;
   text-decoration: none;
 }
 
 header {
   display: flex;
+  /* 
+    * space-btw right and left both elements are moved to very end and then middle content 
+    * is adjusted according the right and left elements.
+    */
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 15px 10;
 }
 
 .logo {
   height: 60px;
   width: 60px;
+  cursor: pointer;
 }
 
 .navlink {
   list-style: none;
+}
+
+.navlink li {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+}
+
+.navlink li a {
+  /* * This will smaller the size everytime you refresh the page */
+  /* transition: all 1s ease 0.3s; */
+}
+
+.navlink li a:hover {
+  color: teal;
+  transition: all 1s ease-in 0.3s;
+}
+
+.contacts {
+  display: inline-block;
+  /* padding: 5px 10px 5px 10px; */
+  background-color: rgb(65, 124, 113);
+  /* background-color:; */
+}
+
+button {
+  background-color: rgba(65, 124, 113, 1);
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button :hover {
+  transition: all 1s ease-in-out 0.2s;
+  background-color: rgba(65, 124, 113, 0.3);
 }
