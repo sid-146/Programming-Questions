@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* * This will overide everthing in this CSS file */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background-color: #2a2a2a;
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: blanchedalmond;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+.navlink {
+  list-style: none;
+}
