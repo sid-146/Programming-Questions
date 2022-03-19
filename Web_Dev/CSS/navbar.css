@@ -46,19 +46,12 @@ header {
 
 .navlink li a {
   /* * This will smaller the size everytime you refresh the page */
-  /* transition: all 1s ease 0.3s; */
+  transition: all 0.1s ease-in 0s;
 }
 
 .navlink li a:hover {
   color: teal;
-  transition: all 1s ease-in 0.3s;
-}
-
-.contacts {
-  display: inline-block;
-  /* padding: 5px 10px 5px 10px; */
-  background-color: rgb(65, 124, 113);
-  /* background-color:; */
+  transition: all 0.4s ease-in 0s;
 }
 
 button {
@@ -67,9 +60,10 @@ button {
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 button :hover {
-  transition: all 1s ease-in-out 0.2s;
+  /* transition: all 0.4s ease-in-out 0s; */
   background-color: rgba(65, 124, 113, 0.3);
 }
