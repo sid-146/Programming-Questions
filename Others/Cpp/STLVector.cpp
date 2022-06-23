@@ -31,7 +31,7 @@ int main()
 
     v.pop_back();
 
-    for (int i : v)
+    for (auto &i : v)
     {
         cout << i << endl;
     }
